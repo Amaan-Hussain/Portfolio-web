@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio web</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&family=Pathway+Extreme:opsz@8..144&family=Space+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="#" class="logo">Portfolio</a>
+            <ul class="nav-items">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About me</a></li>
+                <li><a href="https://github.com/Amaan-Hussain">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/amaan30796/">LinkedIn</a></li>
+            </ul>
+            <div class="hambar">
+                <div class="bar bar1"></div>
+                <div class="bar bar2"></div>
+                <div class="bar bar3"></div>
+            </div>
+        </header>
+        <section>
+            <h1>Hello!</h1>
+            <p>I'm Amaan Hussain...</p>
+
+            <div class="icons">
+                <a href="https://github.com/Amaan-Hussain"><i class="fa-brands fa-github fa-xl"></i></a>
+                <!-- <a href="https://github.com/Amaan-Hussain"><i class="fa-brands fa-instagram fa-xl"></i></a> -->
+                <a href="https://www.linkedin.com/in/amaan30796/ "><i class="fa-brands fa-linkedin fa-xl"></i></a>
+            </div>
+        </section>
+    </div>
+    <script>
+        let navItem = document.querySelector(".nav-items");
+        let hamBar = document.querySelector(".hambar");
+
+        hamBar.addEventListener('click',fun = () => {
+            navItem.classList.toggle("active");
+        });
+    </script>
+</body>
+</html>
